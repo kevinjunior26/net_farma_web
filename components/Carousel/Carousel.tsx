@@ -19,7 +19,7 @@ export function CarouselPlugin() {
     return (
         <Carousel
             plugins={[plugin.current]}
-            className="w-1920px h-916px flex-shrink-0 bg-yellow-400"
+            className="fixed top-0 left-0 w-full h-[917px] z-0"
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
         >
@@ -28,7 +28,7 @@ export function CarouselPlugin() {
                     <CarouselItem key={index}>
                         <div className="p-1 w-full">
                             <Card>
-                                <CardContent className="flex aspect-square items-center justify-center p-6 bg-red-600">
+                                <CardContent className="flex w-screen h-screen items-center justify-center bg-[#F2F5F7]">
                                     <span className="text-4xl font-semibold">{index + 1}</span>
                                 </CardContent>
                             </Card>
@@ -41,3 +41,4 @@ export function CarouselPlugin() {
         </Carousel>
     )
 }
+
