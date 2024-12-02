@@ -59,52 +59,53 @@ const menu = [
         href: "/contacto",
     },
     {
-        name: "Sobre NetFarma",
+        name: "Sobre Nós",
         href: "/sobrenetfarma",
     }
 ]
 
 export function MenubarDemo() {
     return (
-       <header className="grid justify-center w-full py-4">
-           <Menubar>
-               <MenubarMenu>
-                   <div className=" w-[107px] h-[76px] flex-shrink-0 -mt-8 bg-white">
-                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                       <img src="../../logo.png" alt="Logo NetFarma"/>
-                   </div>
-                   <div className="flex justify-end col-span-10 px-10">
-                       <Menubar>
-                           {menu.map((item) => (
-                               <MenubarMenu key={item.name}>
-                                   {item.submenu && item.submenu.length > 0 ? (
-                                       <div>
-                                           <MenubarTrigger>
-                                               {item.name}
-                                           </MenubarTrigger>
-                                           <MenubarContent>
-                                               <ul>
-                                                   {item.submenu.map((submenu) => (
-                                                       <li key={submenu.name}>
-                                                           <MenubarItem>
-                                                               {submenu.name}
-                                                           </MenubarItem>
-                                                       </li>
-                                                   ))}
-                                               </ul>
-                                           </MenubarContent>
-                                       </div>
-                                   ) : (
-                                       <MenubarTrigger>
-                                           {item.name}
-                                       </MenubarTrigger>
-                                   )}
-                               </MenubarMenu>
-                           ))}
-                       </Menubar>
-                   </div>
-               </MenubarMenu>
-           </Menubar>
-       </header>
+        <header className="grid justify-center w-full py-4">
+            <Menubar>
+                <MenubarMenu>
+                    <div className="flex items-center justify-between w-full">
+                        {/* Logo à esquerda */}
+                        <div className="overflow-hidden w-[107px] flex-shrink-0 h-auto -mt-4">
+                            <img src="../../logo.png" alt="Logo NetFarma" className="h-auto w-full"/>
+                        </div>
+
+                        {/* Menus à direita */}
+                        <div className="flex space-x-3">
+                            {menu.map((item) => (
+                                <div key={item.name}>
+                                    <MenubarMenu>
+                                        {item.submenu && item.submenu.length > 0 ? (
+                                            <div>
+                                                <MenubarTrigger>{item.name}</MenubarTrigger>
+                                                <MenubarContent>
+                                                    <ul>
+                                                        {item.submenu.map((submenu) => (
+                                                            <li key={submenu.name}>
+                                                                <MenubarItem>{submenu.name}</MenubarItem>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </MenubarContent>
+                                            </div>
+                                        ) : (
+                                            <MenubarTrigger>{item.name}</MenubarTrigger>
+                                        )}
+                                    </MenubarMenu>
+                                </div>
+                            ))}
+                                <img src="../../profile.svg" alt=""/>
+                                <img src="../../car.svg" alt=""/>
+                                <img src="../../menuBar.svg" alt=""/>
+                        </div>
+                    </div>
+                </MenubarMenu>
+            </Menubar>
+        </header>
     )
 }
