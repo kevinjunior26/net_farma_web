@@ -73,9 +73,9 @@ export function MenubarDemo() {
                 <p><span className="text-[#149572]">NeTFarma</span> <strong>uma solução para todos.</strong></p>
 
                 <div className="flex space-x-2">
-                    <Facebook size={20}/>
-                    <Twitter size={20}/>
-                    <Instagram size={20}/>
+                    <Facebook size={20} className="cursor-pointer"/>
+                    <Twitter size={20} className="cursor-pointer"/>
+                    <Instagram size={20} className="cursor-pointer"/>
 
                     <p>PT</p>
                 </div>
