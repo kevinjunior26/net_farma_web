@@ -55,7 +55,17 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+
+		keyframes: {
+			fadeInUpSmooth: {
+				'0%': { opacity: '0', transform: 'translateY(100px)' },
+				'100%': { opacity: '1', transform: 'translateY(0)' },
+			},
+		},
+		animation: {
+			fadeInUpSmooth: 'fadeInUpSmooth 0.8s ease-out forwards',
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

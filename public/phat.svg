@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="517" height="480" viewBox="0 0 517 480" fill="none">
+    <!-- Coração -->
+    <path opacity="0.09" d="M458.473 29.2369C336.493 -60.5331 258.347 89.7209 258.347 89.7209C258.347 89.7209 180.2 -60.5331 58.219 29.2369C-81.388 131.979 49.519 434.514 258.347 479.276C467.174 434.514 598.082 131.979 458.473 29.2369Z" fill="#9BA3C4"/>
+
+    <!-- Escudo prata -->
+    <g transform="translate(64, 35)">
+        <path d="M195.073 409.637C401.826 317.425 388.717 69.437 388.717 69.437C323.282 21.062 195.073 1.48096 195.073 1.48096C195.073 1.48096 66.866 21.067 1.43102 69.437C1.43102 69.437 -11.681 317.428 195.073 409.637Z" fill="url(#paint0_linear_1_1157)" stroke="#707070" stroke-miterlimit="10"/>
+        <defs>
+            <linearGradient id="paint0_linear_1_1157" x1="1.26489" y1="205.559" x2="388.883" y2="205.559" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E9E9E9"/>
+                <stop offset="0.009" stop-color="#C9C9C9"/>
+                <stop offset="0.02" stop-color="#AFAFAF"/>
+                <stop offset="0.031" stop-color="#999999"/>
+                <stop offset="0.045" stop-color="#888888"/>
+                <stop offset="0.062" stop-color="#7C7C7C"/>
+                <stop offset="0.086" stop-color="#757575"/>
+                <stop offset="0.153" stop-color="#747474"/>
+                <stop offset="0.29" stop-color="white"/>
+                <stop offset="0.493" stop-color="#A1A1A1"/>
+                <stop offset="0.495" stop-color="#9A9A9A"/>
+                <stop offset="0.497" stop-color="#898989"/>
+                <stop offset="0.499" stop-color="#6C6C6C"/>
+                <stop offset="0.501" stop-color="#494949"/>
+                <stop offset="0.615" stop-color="#494949"/>
+                <stop offset="0.778" stop-color="#E3E3E3"/>
+                <stop offset="0.914" stop-color="#929292"/>
+                <stop offset="1" stop-color="#CCCCCC"/>
+            </linearGradient>
+        </defs>
+
+        <!-- Escudo verde -->
+        <g transform="translate(24, 25)">
+            <path d="M171.073 360.595C96.9571 324.385 45.8 261.79 19.012 174.519C7.46057 136.457 1.245 96.9775 0.54303 57.2079C56.494 21.3859 150.78 3.83888 171.069 0.379883C191.369 3.85188 285.714 21.4509 341.588 57.1959C340.86 97.3538 334.532 137.214 322.788 175.623C295.901 262.325 244.863 324.547 171.073 360.595Z" fill="url(#paint0_radial_1_1160)"/>
+            <defs>
+                <radialGradient id="paint0_radial_1_1160" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220.229 180.487) scale(253.665 246.027)">
+                    <stop stop-color="#30C89F"/>
+                    <stop offset="0.395" stop-color="#0A9A73"/>
+                    <stop offset="0.518" stop-color="#0A9A73"/>
+                    <stop offset="0.689" stop-color="#0A9A73"/>
+                    <stop offset="0.773" stop-color="#0A9A73"/>
+                    <stop offset="1" stop-color="#0A9A73"/>
+                </radialGradient>
+            </defs>
+
+            <!-- Cruz branca -->
+            <g transform="translate(85, 85)">
+                <path d="M86.065 167.304C81.5342 167.367 77.1633 165.63 73.911 162.475C70.6588 159.32 68.7905 155.004 68.716 150.473V100.91H17.641C15.3869 100.979 13.1418 100.595 11.039 99.7809C8.93609 98.9663 7.01828 97.7376 5.39926 96.1677C3.78025 94.5979 2.49302 92.7188 1.61398 90.642C0.734946 88.5653 0.281982 86.3331 0.281982 84.0779C0.281982 81.8228 0.734946 79.5906 1.61398 77.5138C2.49302 75.437 3.78025 73.558 5.39926 71.9882C7.01828 70.4183 8.93609 69.1896 11.039 68.375C13.1418 67.5604 15.3869 67.1764 17.641 67.2459H68.716V17.6839C68.8443 13.1677 70.7285 8.87956 73.9683 5.73053C77.2081 2.5815 81.548 0.819824 86.066 0.819824C90.584 0.819824 94.924 2.5815 98.1637 5.73053C101.403 8.87956 103.288 13.1677 103.416 17.6839V67.2469H154.492C156.746 67.1774 158.991 67.5614 161.094 68.376C163.197 69.1906 165.115 70.4193 166.734 71.9891C168.353 73.559 169.64 75.4381 170.519 77.5148C171.398 79.5916 171.851 81.8238 171.851 84.0789C171.851 86.3341 171.398 88.5663 170.519 90.643C169.64 92.7198 168.353 94.5988 166.734 96.1687C165.115 97.7386 163.197 98.9673 161.094 99.7819C158.991 100.597 156.746 100.98 154.492 100.911H103.416V150.474C103.341 155.005 101.472 159.321 98.2193 162.475C94.9668 165.63 90.5959 167.367 86.065 167.304Z" fill="url(#paint0_linear_1_1162)"/>
+                <defs>
+                    <linearGradient id="paint0_linear_1_1162" x1="86.0665" y1="167.306" x2="86.0665" y2="0.819824" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#9A9AAA"/>
+                        <stop offset="0.175" stop-color="#A9A9B6"/>
+                        <stop offset="0.513" stop-color="#D1D1D8"/>
+                        <stop offset="0.847" stop-color="white"/>
+                    </linearGradient>
+                </defs>
+            </g>
+        </g>
+    </g>
+
+    <!-- cruz pequeno verde -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="31" viewBox="0 0 26 31" fill="none">
+        <path opacity="0.43" d="M25.907 11.3969H17.071V0.85791H9.541V11.3969H0.703003V20.3779H9.54V30.9159H17.07V20.3769H25.907V11.3969Z" fill="#0A9A73"/>
+    </svg>
+
+   <!--  Sombra redonda -->
+   <svg xmlns="http://www.w3.org/2000/svg"
+     width="749"
+     height="81"
+     viewBox="0 0 749 81"
+     fill="none"
+     x="0"
+     y="440"
+     >
+    <path opacity="0.14" d="M374.5 80.488C581.325 80.488 748.99 62.5006 748.99 40.312C748.99 18.1234 581.325 0.135986 374.5 0.135986C167.675 0.135986 0.0100098 18.1234 0.0100098 40.312C0.0100098 62.5006 167.675 80.488 374.5 80.488Z" fill="url(#paint0_radial_1_1164)"/>
+    <defs>
+        <radialGradient id="paint0_radial_1_1164" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-40.4964 21.5725) rotate(180) scale(375.945 40.332)">
+            <stop/>
+            <stop offset="0.058" stop-color="#05040F" stop-opacity="0.82"/>
+            <stop offset="0.717" stop-color="#1C1958" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+</svg>
+
+
+</svg>
