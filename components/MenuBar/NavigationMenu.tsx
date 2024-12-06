@@ -72,7 +72,7 @@ export function MenubarDemo() {
             </div>
 
             {/* Menubar */}
-            <div className="flex justify-center fixed top-12 left-1/2 transform -translate-x-1/2 z-50 w-full">
+            <div className="flex justify-center fixed top-12 left-1/2 transform -translate-x-1/2 z-40 w-full">
             <Menubar>
                     <MenubarMenu>
                         <div className="flex items-center justify-between w-full px-4">

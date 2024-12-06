@@ -10,6 +10,9 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 export function CarouselSize() {
+    function Click(){
+        alert("Em Construção")
+    }
     return (
         <section className="flex justify-center items-center bg-white">
             <Carousel
@@ -26,7 +29,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -43,7 +46,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -60,7 +63,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -77,7 +80,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -94,7 +97,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -111,7 +114,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -128,7 +131,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -145,7 +148,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -162,7 +165,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"
@@ -179,7 +182,7 @@ export function CarouselSize() {
                         <CarouselItem className="md:basis-1/5 lg:basis-1/5 -z-50">
                             <Card
                                 className="cursor-pointer border-none shadow-none h-[100px] flex flex-col justify-center hover:text-[#0A9A73] transition duration-300 hover:scale-[90%]">
-                                <CardContent className="flex flex-col aspect-square items-center justify-center p-3">
+                                <CardContent onClick={Click} className="flex flex-col aspect-square items-center justify-center p-3">
                                     <div className=" p-3">
                                         <img
                                             className="w-[60px] h-[60px] cursor-pointer hover:fill-[#0A9A73] transition duration-300"

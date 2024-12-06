@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { MenubarDemo } from "@/components/MenuBar/NavigationMenu";
+import CustomCursorBanner from "@/components/CustomCursorBanner/CustomCursorBanner";
 
 // Metadata da página
 export const metadata: Metadata = {
@@ -13,13 +14,14 @@ export const metadata: Metadata = {
 
 // Layout raiz para envolver todas as páginas
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+   }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
         <body className="bg-white">
+        <CustomCursorBanner />
         {/* Menubar será fixo em todas as páginas */}
         <MenubarDemo />
 

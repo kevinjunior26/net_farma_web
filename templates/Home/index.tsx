@@ -6,6 +6,8 @@ import {SpecialOfferSection} from "@/components/Home/SpecialOfferSectionComponen
 import * as React from "react";
 import {HealthCampaing} from "@/components/Home/HealthCampaingComponent/HealthCampaingSection";
 import {RecenteProductSection} from "@/components/Home/RecentProductSectionComponent/RecenteProductSection";
+import {HealthPromoSection} from "@/components/Home/HealthPromoSectionComponent/HealthPromoSection";
+import {TrendingProductsSection} from "@/components/Home/TrendingProductsSectionComponente/TrendingProductsSection";
 
 export function Home(){
     return (
@@ -20,6 +22,8 @@ export function Home(){
             <SpecialOfferSection/>
             <HealthCampaing/>
             <RecenteProductSection/>
+            <HealthPromoSection/>
+            <TrendingProductsSection/> {/* Seção de Produtos em Alta */}
         </section>
 
     )

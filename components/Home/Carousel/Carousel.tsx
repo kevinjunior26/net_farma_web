@@ -10,12 +10,15 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import {Button} from "@/components/ui/button";
 
 export function CarouselPlugin() {
     const plugin = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
     )
-
+    function OnClick(){
+        alert("Em Construção")
+    }
     return (
         <Carousel
             plugins={[plugin.current]}
@@ -41,10 +44,11 @@ export function CarouselPlugin() {
                                         <p className="animate-fadeInUpSmooth delay-[15000ms]">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing
                                         </p>
-                                        <button
+                                        <Button
+                                            onClick={OnClick}
                                             className="max-w-44 h-12 rounded bg-[#0A9A73] text-white hover:bg-[#087C5C] animate-fadeInUpSmooth delay-[18000ms] transition duration-300">
                                             Compre Agora
-                                        </button>
+                                        </Button>
                                     </div>
                                 </div>
 
