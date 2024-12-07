@@ -89,11 +89,7 @@ export function MenubarDemo() {
                                             {item.submenu && item.submenu.length > 0 ? (
                                                 <div>
                                                     <MenubarTrigger onClick={() => toggleSubmenu(index)}>
-                                                        {openSubmenus[index] ? (
-                                                            <p className="flex">{item.name} <ChevronUp /></p>
-                                                        ) : (
-                                                            <p className="flex">{item.name} <ChevronDown /></p>
-                                                        )}
+                                                        <p className="flex h-[50px] items-center">{item.name} <ChevronDown /></p>
                                                     </MenubarTrigger>
                                                     {openSubmenus[index] && (
                                                         <MenubarContent>
