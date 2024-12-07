@@ -5,7 +5,7 @@ import {
     MenubarMenu,
     MenubarTrigger,
 } from "@/components/ui/menubar"
-import {ChevronDown, ChevronUp, Facebook, Instagram, Twitter} from "lucide-react"
+import {ChevronDown, Facebook, Instagram, Twitter} from "lucide-react"
 import {useState} from "react";
 
 const menu = [
