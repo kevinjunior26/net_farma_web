@@ -1,4 +1,5 @@
 'use client'
+import {CldImage} from "next-cloudinary";
 import React, { useEffect, useState } from "react";
 export function HealthCampaing() {
     const [timeLeft, setTimeLeft] = useState({
@@ -81,7 +82,11 @@ export function HealthCampaing() {
                 </div>
 
                 <div className="flex justify-center w-[50%]">
-                    <img className="w-11/12" src="../../ilastration.svg" alt="" />
+                    <img
+                        className="w-11/12"
+                        src="https://res.cloudinary.com/dm6rzfggr/image/upload/v1733622418/ilastration_drcvlw.png"
+                        alt=""
+                    />
                 </div>
             </div>
         </section>
