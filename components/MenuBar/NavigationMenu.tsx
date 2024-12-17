@@ -5,7 +5,7 @@ import {
     MenubarMenu,
     MenubarTrigger,
 } from "@/components/ui/menubar"
-import {ChevronDown, ChevronUp, Facebook, Instagram, Twitter} from "lucide-react"
+import {ChevronDown, Facebook, Instagram, Twitter} from "lucide-react"
 import {useState} from "react";
 
 const menu = [
@@ -72,7 +72,7 @@ export function MenubarDemo() {
             </div>
 
             {/* Menubar */}
-            <div className="flex justify-center fixed top-12 left-1/2 transform -translate-x-1/2 z-50 w-full">
+            <div className="flex justify-center fixed top-12 left-1/2 transform -translate-x-1/2 z-40 w-full">
             <Menubar>
                     <MenubarMenu>
                         <div className="flex items-center justify-between w-full px-4">
@@ -89,11 +89,7 @@ export function MenubarDemo() {
                                             {item.submenu && item.submenu.length > 0 ? (
                                                 <div>
                                                     <MenubarTrigger onClick={() => toggleSubmenu(index)}>
-                                                        {openSubmenus[index] ? (
-                                                            <p className="flex">{item.name} <ChevronUp /></p>
-                                                        ) : (
-                                                            <p className="flex">{item.name} <ChevronDown /></p>
-                                                        )}
+                                                        <p className="flex h-[50px] items-center">{item.name} <ChevronDown /></p>
                                                     </MenubarTrigger>
                                                     {openSubmenus[index] && (
                                                         <MenubarContent>

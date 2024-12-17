@@ -1,6 +1,11 @@
+'use client'
 import {CircleChevronRight} from "lucide-react";
+import {Button} from "@/components/ui/button";
 
 export function FeaturedItems() {
+    function OnClick(){
+        alert("Em Construção")
+    }
     return (
         <section className="w-full flex justify-center py-16 gap-5">
             <div className="bg-[#DCEDFD] w-[370px] h-[440px] flex-shrink-0 p-8 overflow-hidden">
@@ -11,8 +16,10 @@ export function FeaturedItems() {
 
                 <div className="h-[320px] relative">
                     <div className="w-[160px] flex items-center justify-center py-9 absolute top-0 -left-7 gap-x-1 z-5">
-                        <span className="text-xs font-light cursor-pointer"> Comprar Agora </span> <CircleChevronRight cursor={"pointer"} size={15}/>
-                    </div>
+                        <Button onClick={OnClick}
+                                className="hover:bg-transparent hover:border-y-green-400 text-xs font-light cursor-pointer bg-transparent text-black shadow-none border-b-2 border-black">
+                            Comprar Agora <CircleChevronRight cursor={"pointer"} size={15}/>
+                        </Button>                    </div>
                     <div
                         className="w-[250px] h-[250px] flex flex-col justify-center items-center gap-y-9 absolute bottom-0 right-0 z-10">
                         <div className="w-[400px] m-20 bg-red-400 relative">
@@ -35,7 +42,10 @@ export function FeaturedItems() {
 
                 <div className="h-[320px] relative">
                     <div className="w-[160px] flex items-center justify-center py-9 absolute top-0 -left-7 gap-x-1 z-5">
-                        <span className="text-xs font-light cursor-pointer"> Comprar Agora </span> <CircleChevronRight cursor={"pointer"} size={15}/>
+                        <Button onClick={OnClick}
+                                className="hover:bg-transparent hover:border-y-green-400 text-xs font-light cursor-pointer bg-transparent text-black shadow-none border-b-2 border-black">
+                            Comprar Agora <CircleChevronRight cursor={"pointer"} size={15}/>
+                        </Button>
                     </div>
                     <div
                         className="w-[250px] h-[250px] flex flex-col justify-center items-center gap-y-9 absolute bottom-0 right-0 z-10">
@@ -59,8 +69,10 @@ export function FeaturedItems() {
 
                 <div className="h-[320px] relative">
                     <div className="w-[160px] flex items-center justify-center py-9 absolute top-0 -left-7 gap-x-1 z-5">
-                        <span className="text-xs font-light cursor-pointer"> Comprar Agora </span> <CircleChevronRight cursor={"pointer"} size={15}/>
-                    </div>
+                        <Button onClick={OnClick}
+                                className="hover:bg-transparent hover:border-y-green-400 text-xs font-light cursor-pointer bg-transparent text-black shadow-none border-b-2 border-black">
+                            Comprar Agora <CircleChevronRight cursor={"pointer"} size={15}/>
+                        </Button>                    </div>
                     <div
                         className="w-[250px] h-[250px] flex flex-col justify-center items-center gap-y-9 absolute bottom-0 right-0 z-10">
                         <div className="w-[400px] m-20 bg-red-400 relative">
