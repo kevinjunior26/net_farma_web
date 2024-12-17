@@ -27,8 +27,9 @@ export function SpecialOfferSection() {
                                             className="bg-[#FFF] opacity-65 rounded-full w-[150px] h-[150px] absolute -top-16 left-32 transition duration-300 hover:scale-[120%]">
                                             <img
                                                 className="w-[400px] h-[200px] object-cover -mt-8 -ml-0 z-40"
-                                                src="../../img/termometro-digital-atual-removebg-preview.png"
-                                                alt=""/>
+                                                src='../../img/termometro-digital-atual-removebg-preview.png'
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
                                 </div>
