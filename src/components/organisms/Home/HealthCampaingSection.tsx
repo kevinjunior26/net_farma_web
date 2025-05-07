@@ -1,5 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
+import {Headline} from "@/src/components/atoms/headline";
+import {Button} from "@/src/components/atoms/button";
 export function HealthCampaing() {
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
@@ -38,14 +40,11 @@ export function HealthCampaing() {
                 <div className="flex">
 
                     <div className="container w-[50%] p-4">
-                        <h1 className="text-[#071C1F] font-[Josefin Sans] text-[44px] font-bold leading-normal">
-                            Vacina Covid-19 Gratuita Bilhete de Campanha
-                        </h1>
-                        <p className="w-[552px] h-[50px] flex-shrink-0 text-[#546375] font-[Josefin Sans] text-[16px] font-normal leading-normal py-5">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry`s standard dummy text ever since the 1500s
-                        </p>
-
+                        <Headline
+                            title={' Vacina Covid-19 Gratuita Bilhete de Campanha'}
+                            description={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s'}
+                            align={'left'}
+                        />
                         <div className="gap-x-5 gap-y-24 mt-14 flex">
                             <div>
                                 <div className="w-16 h-14 text-[#0A9A73] bg-white flex justify-center items-center">
@@ -74,11 +73,10 @@ export function HealthCampaing() {
                         </div>
 
                         <div className="flex gap-x-5 mt-10">
-                            <button
-                                className="max-w-44 p-4 rounded bg-[#0A9A73] text-white hover:bg-[#087C5C] animate-fadeInUpSmooth delay-[18000ms] transition duration-300">
+                            <Button
+                                className="bg-[#0A9A73]">
                                 Inscreva-se Agora
-                            </button>
-                            {/*<span className="bg-transparent p-4 rounded-md text-[#0A9A73] underline cursor-pointer">Oferta do dia</span>*/}
+                            </Button>
                         </div>
                     </div>
 

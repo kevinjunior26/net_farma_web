@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import {HeaderTemplates} from "@/src/components/templates/HeaderTemplate/HeaderTemplates";
+import { Suspense } from "react";
+import { Header } from "../components/templates/HeaderTemplate/HeaderTemplates";
+import {FavoritesProvider} from "@/src/context/FavoritesContext";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -26,12 +28,21 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={poppins.variable}>
-        <body className={`${poppins.className}`}>
-        {/* Menubar será fixo em todas as páginas */}
-        {/*<MenubarDemo />*/}
-        <HeaderTemplates/>
-        <main>{children}</main>
+        <html lang="en" suppressHydrationWarning>
+        <body className={`${poppins.className}  antialiased`}>
+        <Suspense
+            fallback={
+                <div className="flex flex-col items-center justify-center h-screen space-y-4">
+                    <div className="animate-spin rounded-full h-24 w-24 border-t-4 border-blue-500"/>
+                </div>
+            }
+        >
+            <FavoritesProvider>
+                <Header/>
+                <main>{children}</main>
+            </FavoritesProvider>
+
+        </Suspense>
         </body>
         </html>
     );

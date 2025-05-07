@@ -7,6 +7,7 @@ import Image from "next/image";
 import {SearchGlobalBtn} from "./components/SearchGlobalBtn";
 import {ScrollArea} from "../../atoms/scroll-area";
 import { IMenuData, ISiteInfo } from "@/src/types/InterfaceMenuData/type";
+import {FavoritesIcon} from "@/src/components/organisms/Favorites/Favorites";
 //import {MobileMenuSheet} from "./components/MobileMenuSheet";
 
 interface IHeaderContainerProps extends IMenuData, ISiteInfo {}
@@ -66,11 +67,11 @@ export function HeaderContainer({menuGroups, logo}: IHeaderContainerProps) {
             className={`fixed top-0 left-0 w-full z-50 `}
         >
             <div className="relative w-full h-full">
-                <div className="container mx-auto flex items-center justify-between gap-6 h-full pb-6">
+                <div className="container mx-auto flex items-center justify-between gap-6 h-full">
                     {logo?.url && (
                         <Link
                             href="/public">
-                            <Image width={120} height={43} src={logo?.url} alt="logo"/>
+                            <Image width={100} height={30} src={logo?.url} alt="logo"/>
                         </Link>
                     )}
 
@@ -89,12 +90,14 @@ export function HeaderContainer({menuGroups, logo}: IHeaderContainerProps) {
                                     >
                                         {group?.url ? (
                                             <Link href={group.url}>
-                                            <span className={`font-poppins font-normal hover:text-[#61C3A8] text-[16px] leading-[100%] tracking-[0.03em] text-center uppercase text-[#334155] ${finalClass}`}>
+                                            <span
+                                                className={`font-poppins font-normal hover:text-[#61C3A8] text-[16px] leading-[100%] tracking-[0.03em] text-center uppercase text-[#334155] ${finalClass}`}>
                                               {group.name}
                                             </span>
                                             </Link>
                                         ) : (
-                                            <span className={`font-poppins font-normal hover:text-[#61C3A8] text-[16px] leading-[100%] tracking-[0.03em] text-center uppercase text-[#334155] ${finalClass}`}>
+                                            <span
+                                                className={`font-poppins font-normal hover:text-[#61C3A8] text-[16px] leading-[100%] tracking-[0.03em] text-center uppercase text-[#334155] ${finalClass}`}>
                                                 {group.name}
                                             </span>
                                         )}
@@ -106,9 +109,10 @@ export function HeaderContainer({menuGroups, logo}: IHeaderContainerProps) {
 
                     {/* Deve manter porque é mobile*/}
                     <div className="flex items-center space-x-4">
+                        <Link href={'/favoritos'} className='cursor-pointer'>
+                            <FavoritesIcon/>
+                        </Link>
                         <SearchGlobalBtn/>
-                        {/*<AuthMenu />*/}
-                        {/*<MobileMenuSheet menuGroups={menuGroups}/>*/}
                     </div>
                 </div>
 

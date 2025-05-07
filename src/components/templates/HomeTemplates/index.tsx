@@ -13,7 +13,7 @@ import {bannerData} from "@/src/services/getDataMenu/data";
 
 export function HomeTemplate(){
     return (
-        <section className="w-full h-full min-h-screen">
+        <section className="">
             <HeroCarousel slidesData={bannerData}/>
             <CarouselSize/>
             <PartnerInfoSectionComponent/>
@@ -22,7 +22,7 @@ export function HomeTemplate(){
             <HealthCampaing/>
             <RecenteProductSection/>
             <HealthPromoSection/>
-            <TrendingProductsSection/> {/* Seção de Produtos em Alta */}
+            <TrendingProductsSection/>
         </section>
 
     )

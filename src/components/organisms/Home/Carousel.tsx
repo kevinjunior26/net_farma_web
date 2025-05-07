@@ -34,7 +34,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
     };
 
     return (
-        <section className="overflow-hidden bg-[#F8FAFC] relative mb-10" key="herobanner">
+        <section className="overflow-hidden bg-[#F8FAFC] relative mb-12" key="herobanner">
             <div className="max-w-[1992px] relative mx-auto">
                 <HeroRightShape
                     gradientStartColor={grad.start}
@@ -45,6 +45,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
                 />
 
                 <div className="relative container h-full min-h-screen 2xl:min-h926:min-h-[926px] flex flex-col justify-center pt-48 xl:pt-0">
+                    {/* Imagem de fundo no banner */}
                     <div className="hidden xl:block absolute max-h-[90vh] bottom-0 xl:right-[100px]  3xl:right-[100px] xl:w-[621px] 3xl:w-[847px] xl:h-[703px] 3xl:h-[777px] pointer-events-none">
                         {slidesData.map((slide, idx) => (
                             <motion.img
@@ -62,9 +63,8 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
                         ))}
                     </div>
 
-                    <div className=" z-10 flex flex-col items-center justify-between  xl:justify-center gap-6 md:items-start pr-6 h-full">
-                        <div
-                            className="flex px-8 flex-col gap-5 items-center xl:items-start xl:py-[200px] lg:pr-6 max-w-[744px] mx-auto xl:mx-0 text-center xl:text-start">
+                    <div className="px-12 z-10 flex flex-col items-center justify-between  xl:justify-center gap-6 md:items-start pr-6 h-full">
+                        <div className="flex flex-col gap-5 items-center xl:items-start xl:py-[200px] lg:pr-6 max-w-[744px] mx-auto xl:mx-0 text-center xl:text-start">
                             <AnimatePresence mode="wait">
                                 <motion.h1
                                     key={`title-${currentSlide}`}

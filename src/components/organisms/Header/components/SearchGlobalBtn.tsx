@@ -2,9 +2,8 @@
 import { useState } from "react";
 import Icon from "./Icons";
 import {SearchGlobal} from "@/src/components/organisms/Header/components/SearchGlobal";
-interface SearchGlobalBtnProps {
-}
-export function SearchGlobalBtn({  }: SearchGlobalBtnProps) {
+
+export function SearchGlobalBtn() {
     const [open, setOpen] = useState(false);
     return (
         <>

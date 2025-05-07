@@ -20,6 +20,8 @@ const buttonVariants = cva(
                     "bg-white text-primary shadow-sm hover:bg-white/80 rounded-full font-semibold",
                 ghost: "hover:bg-accent hover:text-accent-foreground",
                 link: "text-primary underline-offset-4 hover:underline",
+
+                isSimulador: "flex justify-center text-[16px] items-center gap-2 border border-primary rounded-full hover:bg-primary/90 hover:text-white",
             },
             size: {
                 default: "h-[54px] px-10 py-2  hover:py-3",
@@ -63,16 +65,15 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
         return (
             <Comp
-                className={`${cn(buttonVariants({ variant, size, className }))} ${
-                    isSimulador ? "show-simulador" : ""
-                }`}
+                className={`${cn(buttonVariants({ variant, size, className }))} ${isSimulador ? "show-simulador" : ""}`}
                 ref={ref}
                 {...props}
             >
-                <span> {iconLeft && iconLeft}</span>
-                <span>{children}</span>
-                <span>{iconRight && iconRight}</span>
+                {iconLeft}
+                {children}
+                {iconRight}
             </Comp>
+
         );
     }
 );

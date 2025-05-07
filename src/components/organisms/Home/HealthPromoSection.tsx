@@ -1,5 +1,6 @@
 import {Button} from "@/src/components/atoms/button";
 import {CircleChevronRight} from "lucide-react";
+import {Headline} from "@/src/components/atoms/headline";
 
 export function HealthPromoSection() {
     return (
@@ -10,12 +11,12 @@ export function HealthPromoSection() {
                 </div>
 
                 <div className="w-[50%]">
-                    <h1 className="text-[#071C1F] font-[Josefin Sans] text-[44px] font-bold leading-normal">
-                        Máscaras de segurança de grau A. <br/> À venda. Apresse-se!
-                    </h1>
-                    <p className="w-[552px] h-[50px] flex-shrink-0 text-[#6D7580] font-[Josefin Sans] text-[16px] font-normal leading-normal py-5">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    </p>
+                    <Headline
+                        align={'left'}
+                        title={'Máscaras de segurança de grau A. À venda. Apresse-se!'}
+                        description={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,'}
+                    />
+
 
                     <ul className="py-14 grid grid-cols-2 gap-y-5">
                         <li className="text-[#071C1F] text-[15px] font-bold leading-normal flex gap-x-4 items-center font-[Josefin Sans]">
@@ -32,7 +33,7 @@ export function HealthPromoSection() {
                         </li>
                     </ul>
 
-                    <Button className="text-[#0A9A73] bg-transparent shadow-none border-b-2 border-[#0A9A73] hover:bg-transparent">
+                    <Button className="bg-[#0A9A73]">
                         Ver Produtos <CircleChevronRight size={24} className="bg-[#0A9A73] text-white rounded-full"/>
                     </Button>
                 </div>
