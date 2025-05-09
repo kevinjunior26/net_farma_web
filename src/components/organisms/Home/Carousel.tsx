@@ -44,7 +44,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
                     className="pointer-events-none absolute right-[-60%] sm:right-[-30%] md:right-[-100px] top-[-180px] xl:right-[-49px] 3xl:top-[-180px] 3xl:right-[-58px] w-[450px] h-[1508px]"
                 />
 
-                <div className="relative container h-full min-h-screen 2xl:min-h926:min-h-[926px] flex flex-col justify-center pt-48 xl:pt-0">
+                <div className="relative container h-full min-h-screen  flex flex-col justify-center pt-48 xl:pt-0"> {/*2xl:min-h926:min-h-[926px]*/}
                     {/* Imagem de fundo no banner */}
                     <div className="hidden xl:block absolute max-h-[90vh] bottom-0 xl:right-[100px]  3xl:right-[100px] xl:w-[621px] 3xl:w-[847px] xl:h-[703px] 3xl:h-[777px] pointer-events-none">
                         {slidesData.map((slide, idx) => (
@@ -63,8 +63,8 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
                         ))}
                     </div>
 
-                    <div className="px-12 z-10 flex flex-col items-center justify-between  xl:justify-center gap-6 md:items-start pr-6 h-full">
-                        <div className="flex flex-col gap-5 items-center xl:items-start xl:py-[200px] lg:pr-6 max-w-[744px] mx-auto xl:mx-0 text-center xl:text-start">
+                    <div className="px-12 z-10 flex flex-col items-center justify-between  xl:justify-center gap-6 md:items-start pr-6 h-full ">
+                        <div className="flex flex-col gap-5 items-center xl:items-start xl:py-[100px] lg:pr-6 max-w-[744px] mx-auto xl:mx-0 -mt-32 text-center xl:text-start">
                             <AnimatePresence mode="wait">
                                 <motion.h1
                                     key={`title-${currentSlide}`}
@@ -120,7 +120,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
                         </div>
 
                         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 xl:bottom-[80px] lg:left-0 lg:translate-x-0 z-30 gap-2 px-4 w-full max-w-[90vw]">
-                            <div className="hidden xl:flex items-center gap-4">
+                            <div className="hidden xl:flex items-center gap-4 -mt-32">
                                 <div className="flex items-center gap-4">
                                     <AnimatePresence mode="wait">
                                         {allSlides.map((slideIndex) => (

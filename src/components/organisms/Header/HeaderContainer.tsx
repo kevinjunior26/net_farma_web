@@ -8,12 +8,10 @@ import {SearchGlobalBtn} from "./components/SearchGlobalBtn";
 import {ScrollArea} from "../../atoms/scroll-area";
 import { IMenuData, ISiteInfo } from "@/src/types/InterfaceMenuData/type";
 import {FavoritesIcon} from "@/src/components/organisms/Favorites/Favorites";
-//import {MobileMenuSheet} from "./components/MobileMenuSheet";
 
 interface IHeaderContainerProps extends IMenuData, ISiteInfo {}
 
 export function HeaderContainer({menuGroups, logo}: IHeaderContainerProps) {
-    //const { headerTheme } = useNavigation();
     const [scrolled, setScrolled] = useState(false);
     const [openMenu, setOpenMenu] = useState<number | null>(null);
     const [headerVisible, setHeaderVisible] = useState(true);
@@ -64,13 +62,13 @@ export function HeaderContainer({menuGroups, logo}: IHeaderContainerProps) {
                 damping: 30,
                 stiffness: 200,
             }}
-            className={`fixed top-0 left-0 w-full z-50 `}
+            className={`fixed top-0 left-0 w-full z-50`}
         >
             <div className="relative w-full h-full">
                 <div className="container mx-auto flex items-center justify-between gap-6 h-full">
                     {logo?.url && (
                         <Link
-                            href="/public">
+                            href="/">
                             <Image width={100} height={30} src={logo?.url} alt="logo"/>
                         </Link>
                     )}

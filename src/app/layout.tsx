@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import { Suspense } from "react";
 import { Header } from "../components/templates/HeaderTemplate/HeaderTemplates";
 import {FavoritesProvider} from "@/src/context/FavoritesContext";
+import {Toaster} from "react-hot-toast";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -21,7 +22,6 @@ export const metadata: Metadata = {
     },
 };
 
-// Layout raiz para envolver todas as páginas
 export default function RootLayout({
     children,
    }: Readonly<{
@@ -40,8 +40,8 @@ export default function RootLayout({
             <FavoritesProvider>
                 <Header/>
                 <main>{children}</main>
+                <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
             </FavoritesProvider>
-
         </Suspense>
         </body>
         </html>

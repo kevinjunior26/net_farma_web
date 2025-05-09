@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useEffect, ReactNode } from "react
 
 type FavoritesContextType = {
     favorites: string[];
-    toggleFavorite: (id: string) => void;
+    toggleFavorite: (slug: string) => void;
 };
 
 const FavoritesContext = createContext<FavoritesContextType | undefined>(undefined);
@@ -22,9 +22,9 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
         localStorage.setItem('favorites', JSON.stringify(favorites));
     }, [favorites]);
 
-    const toggleFavorite = (id: string) => {
+    const toggleFavorite = (slug: string) => {
         setFavorites((prev) =>
-            prev.includes(id) ? prev.filter((fid) => fid !== id) : [...prev, id]
+            prev.includes(slug) ? prev.filter((fid) => fid !== slug) : [...prev, slug]
         );
     };
 
