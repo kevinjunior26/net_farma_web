@@ -1,3 +1,4 @@
+"use client";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     title: "NetFarma",
     description: "Farmácia online com soluções para todos",
     icons: {
-        icon: '../../logo.png',
+        icon: '/logo.png',
     },
 };
 
