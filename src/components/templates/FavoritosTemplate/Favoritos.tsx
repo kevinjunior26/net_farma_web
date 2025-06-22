@@ -6,7 +6,7 @@ import {CardProductProps} from "@/src/services/getAllProduct/type";
 import {useFavorites} from "@/src/context/FavoritesContext";
 import { NoItemsFound } from "../../molecules/NotItemsFound/NoItemsFound";
 
-export function FavoritosTempalte({data} : { data: CardProductProps[]}){
+export function FavoritosTemplate({data} : { data: CardProductProps[]}){
     const { favorites } = useFavorites();
 
     const isFavorito = data.length > 0;
