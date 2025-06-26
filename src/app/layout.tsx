@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="pt-BR" suppressHydrationWarning>
         <head>
-            <title>KN95 Premium - Máscaras de Proteção de Alta Qualidade</title>
+            <title>NetFarma</title>
             <meta name="description" content="Máscaras KN95 certificadas com 95% de filtração. Proteção superior, conforto garantido e entrega rápida para toda família." />
             <link rel="icon" href="/logo.png" />
         </head>
