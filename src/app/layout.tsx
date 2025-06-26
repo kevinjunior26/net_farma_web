@@ -1,9 +1,9 @@
 "use client";
-import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import { Suspense } from "react";
-import { Header } from "../components/templates/HeaderTemplate/HeaderTemplates";
+import { ModernHeader } from "../components/organisms/Header/ModernHeader";
+import { ModernFooter } from "../components/organisms/Footer/ModernFooter";
 import {FavoritesProvider} from "@/src/context/FavoritesContext";
 import {Toaster} from "react-hot-toast";
 
@@ -20,8 +20,13 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
-        <body className={`${poppins.className}  antialiased`}>
+        <html lang="pt-BR" suppressHydrationWarning>
+        <head>
+            <title>KN95 Premium - Máscaras de Proteção de Alta Qualidade</title>
+            <meta name="description" content="Máscaras KN95 certificadas com 95% de filtração. Proteção superior, conforto garantido e entrega rápida para toda família." />
+            <link rel="icon" href="/logo.png" />
+        </head>
+        <body className={`${poppins.className} antialiased`}>
         <Suspense
             fallback={
                 <div className="flex flex-col items-center justify-center h-screen space-y-4">
@@ -30,8 +35,9 @@ export default function RootLayout({
             }
         >
             <FavoritesProvider>
-                <Header/>
-                <main>{children}</main>
+                <ModernHeader/>
+                <main className="min-h-screen">{children}</main>
+                <ModernFooter/>
                 <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
             </FavoritesProvider>
         </Suspense>
