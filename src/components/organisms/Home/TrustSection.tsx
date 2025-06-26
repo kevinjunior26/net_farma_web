@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Award, Users, Truck } from 'lucide-react';
+import Headline from "@/src/components/molecules/Headline/Headline";
 
 const stats = [
     {
@@ -57,21 +58,13 @@ export function TrustSection() {
     return (
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Stats Section */}
-                <motion.div 
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Números que <span className="text-transparent bg-clip-text bg-health-gradient">Inspiram Confiança</span>
-                    </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Nossa trajetória é marcada pela excelência e pela confiança de milhares de clientes.
-                    </p>
-                </motion.div>
+
+                <Headline
+                    title={'Números que Inspiram Confiança'}
+                    description={' Nossa trajetória é marcada pela excelência e pela confiança de milhares de clientes.'}
+                    highlights={["Inspiram Confiança"]}
+                    size={'md'}
+                />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
                     {stats.map((stat, index) => (
@@ -105,20 +98,12 @@ export function TrustSection() {
                 </div>
 
                 {/* Certifications Section */}
-                <motion.div 
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-12"
-                >
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                        Certificações e <span className="text-transparent bg-clip-text bg-health-gradient">Aprovações</span>
-                    </h3>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Nossos produtos atendem aos mais rigorosos padrões de qualidade e segurança.
-                    </p>
-                </motion.div>
+                <Headline
+                    title={'Certificações e Aprovações'}
+                    description={'Nossos produtos atendem aos mais rigorosos padrões de qualidade e segurança.'}
+                    highlights={["Aprovações"]}
+                    size={'md'}
+                />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {certifications.map((cert, index) => (

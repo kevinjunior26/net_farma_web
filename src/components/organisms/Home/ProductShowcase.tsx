@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/src/components/atoms/button';
 import { Star, ShoppingCart, Heart } from 'lucide-react';
 import Link from 'next/link';
+import Headline from "@/src/components/molecules/Headline/Headline";
 
 const products = [
         {
@@ -58,20 +59,12 @@ export function ProductShowcase() {
     return (
         <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div 
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Nossos <span className="text-transparent bg-clip-text bg-health-gradient">Produtos</span> em Destaque
-                    </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Escolha o pack ideal para suas necessidades. Todos os produtos com garantia de qualidade e entrega rápida.
-                    </p>
-                </motion.div>
+                <Headline
+                    title={'Nossos Produtos em Destaque'}
+                    description={'Escolha o pack ideal para suas necessidades. Todos os produtos com garantia de qualidade e entrega rápida.'}
+                    highlights={["Produtos", "Destaque"]}
+                    size={'md'}
+                />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {products.map((product, index) => (

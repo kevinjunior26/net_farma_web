@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Wind, Clock, Heart, CheckCircle, Users } from 'lucide-react';
+import Headline from "@/src/components/molecules/Headline/Headline";
 
 // Define as cores permitidas
 type Color = 'emerald' | 'blue' | 'purple' | 'pink' | 'green' | 'orange';
@@ -65,21 +66,12 @@ export function FeaturesSection() {
     return (
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Por que escolher nossas <span className="text-transparent bg-clip-text bg-health-gradient">máscaras KN95</span>?
-                    </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Desenvolvidas com tecnologia avançada para oferecer a melhor proteção
-                        sem comprometer o conforto e a praticidade do dia a dia.
-                    </p>
-                </motion.div>
+                <Headline
+                    title={'Por que escolher nossas máscaras KN95'}
+                    description={'Desenvolvidas com tecnologia avançada para oferecer a melhor proteção sem comprometer o conforto e a praticidade do dia a dia.'}
+                    highlights={["máscaras KN95"]}
+                    size={'md'}
+                />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, index) => (

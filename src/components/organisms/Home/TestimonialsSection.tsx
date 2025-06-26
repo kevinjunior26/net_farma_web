@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
+import Headline from "@/src/components/molecules/Headline/Headline";
 
 const testimonials = [
     {
@@ -34,21 +35,13 @@ export function TestemunhosSection() {
     return (
         <section className="py-20 bg-gradient-to-br from-blue-50 to-emerald-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div 
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        O que nossos <span className="text-transparent bg-clip-text bg-health-gradient">clientes</span> dizem
-                    </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Milhares de pessoas confiam em nossas máscaras para sua proteção diária. 
-                        Veja alguns depoimentos reais de quem já experimentou.
-                    </p>
-                </motion.div>
+
+                <Headline
+                    title={' O que nossos clientes dizem'}
+                    description={'Milhares de pessoas confiam em nossas máscaras para sua proteção diária. Veja alguns depoimentos reais de quem já experimentou.'}
+                    highlights={["clientes"]}
+                    size={'md'}
+                />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {testimonials.map((testimonial, index) => (

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/src/components/atoms/button';
 import { Shield, Star, Truck, Award } from 'lucide-react';
 import Link from 'next/link';
+import Headline from "@/src/components/molecules/Headline/Headline";
 
 export function ModernHero() {
     return (
@@ -34,25 +35,12 @@ export function ModernHero() {
                             Proteção Certificada N95
                         </motion.div>
 
-                        <motion.h1 
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6"
-                        >
-                            Máscaras <span className="text-transparent bg-clip-text bg-health-gradient">KN95</span> de 
-                            <br />Alta Qualidade
-                        </motion.h1>
-
-                        <motion.p 
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4, duration: 0.6 }}
-                            className="text-xl text-gray-600 mb-8 max-w-2xl"
-                        >
-                            Proteja-se e sua família com nossas máscaras KN95 certificadas. 
-                            Filtração superior de 95% de partículas, conforto garantido e entrega rápida.
-                        </motion.p>
+                        <Headline
+                            title={'Máscaras KN95 de Alta Qualidade'}
+                            description={'Proteja-se e sua família com nossas máscaras KN95 certificadas. Filtração superior de 95% de partículas, conforto garantido e entrega rápida.'}
+                            highlights={["KN95"]}
+                            size={'lg'}
+                        />
 
                         <motion.div 
                             initial={{ opacity: 0, y: 20 }}

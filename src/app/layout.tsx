@@ -23,7 +23,9 @@ export default function RootLayout({
         <html lang="pt-BR" suppressHydrationWarning>
         <head>
             <title>NetFarma</title>
-            <meta name="description" content="Máscaras KN95 certificadas com 95% de filtração. Proteção superior, conforto garantido e entrega rápida para toda família." />
+            <meta name=""
+                  content=""
+            />
             <link rel="icon" href="/logo.png" />
         </head>
         <body className={`${poppins.className} antialiased`}>
