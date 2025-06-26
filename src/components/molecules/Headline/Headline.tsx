@@ -42,7 +42,7 @@ export default function Headline({
         );
     };
 
-    
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
