@@ -45,7 +45,7 @@ export function CTASection() {
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
                             </Link>
-                            <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300">
+                            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                                 Falar com Especialista
                             </Button>
                         </div>
@@ -54,11 +54,11 @@ export function CTASection() {
                         <div className="flex flex-col sm:flex-row gap-6 text-blue-100">
                             <div className="flex items-center">
                                 <Phone className="w-5 h-5 mr-2" />
-                                <span>(11) 9999-9999</span>
+                                <span>(+238) 5978254</span>
                             </div>
                             <div className="flex items-center">
                                 <Mail className="w-5 h-5 mr-2" />
-                                <span>contato@kn95premium.com</span>
+                                <span>netfarma.cv@.nf</span>
                             </div>
                         </div>
                     </motion.div>
@@ -74,7 +74,7 @@ export function CTASection() {
                         {[
                             {
                                 title: "Entrega Grátis",
-                                description: "Para compras acima de R$ 99 em todo o Brasil",
+                                description: "Para compras acima de 5.000$ em todas as ilhas de Cabo Verde",
                                 icon: "🚚"
                             },
                             {
@@ -89,7 +89,7 @@ export function CTASection() {
                             },
                             {
                                 title: "Pagamento Seguro",
-                                description: "Pix, cartão ou boleto com total segurança",
+                                description: "Pague com cartão, depósito ou transferência bancária",
                                 icon: "🔒"
                             }
                         ].map((benefit, index) => (

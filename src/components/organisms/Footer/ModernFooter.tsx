@@ -57,31 +57,31 @@ export function ModernFooter() {
                 <div className="grid lg:grid-cols-5 gap-8">
                     {/* Company info */}
                     <div className="lg:col-span-2">
-                        <Link href="/" className="flex items-center space-x-2 mb-6">
-                            <div className="w-10 h-10 bg-health-gradient rounded-xl flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">K</span>
+                        <Link href="/" className="flex items-center space-x-2">
+                            <div className="w-20 h-20 rounded-xl flex items-center justify-center">
+                                {/* <span className="text-white font-bold text-lg">NF</span>*/}
+                                <img src="/logo.png" alt=""/>
                             </div>
-                            <span className="text-xl font-bold">KN95 Premium</span>
+                            <span className="text-xl font-semibold text-white">NetFarma</span>
                         </Link>
                         
                         <p className="text-gray-300 mb-6 leading-relaxed">
-                            Especialistas em proteção respiratória, oferecendo máscaras KN95 
-                            de alta qualidade para sua segurança e de sua família.
+                            Especialistas em produtos farmacêuticos, equipamentos hospitalares e suprimentos médicos com qualidade e confiança para todas as ilhas de Cabo Verde.
                         </p>
 
                         {/* Contact info */}
                         <div className="space-y-3">
                             <div className="flex items-center space-x-3">
                                 <Phone className="w-5 h-5 text-emerald-400" />
-                                <span className="text-gray-300">(11) 9999-9999</span>
+                                <span className="text-gray-300">(+238) 5978254</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <Mail className="w-5 h-5 text-emerald-400" />
-                                <span className="text-gray-300">contato@kn95premium.com</span>
+                                <span className="text-gray-300">netfarma.cv@.nf</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <MapPin className="w-5 h-5 text-emerald-400" />
-                                <span className="text-gray-300">São Paulo, SP - Brasil</span>
+                                <span className="text-gray-300">Praia, - Cabo Verde</span>
                             </div>
                         </div>
 
@@ -131,15 +131,13 @@ export function ModernFooter() {
                                 <span className="text-sm text-gray-300">Compra 100% Segura</span>
                             </div>
                             <div className="flex items-center space-x-4">
-                                <img src="https://via.placeholder.com/60x30/10b981/ffffff?text=SSL" alt="SSL" className="h-6" />
                                 <img src="https://via.placeholder.com/60x30/3b82f6/ffffff?text=VISA" alt="Visa" className="h-6" />
                                 <img src="https://via.placeholder.com/60x30/f59e0b/ffffff?text=MC" alt="Mastercard" className="h-6" />
-                                <img src="https://via.placeholder.com/60x30/8b5cf6/ffffff?text=PIX" alt="PIX" className="h-6" />
                             </div>
                         </div>
                         
                         <div className="text-sm text-gray-400">
-                            © 2024 KN95 Premium. Todos os direitos reservados.
+                            © 2024 NetFarma. Todos os direitos reservados.
                         </div>
                     </div>
                 </div>

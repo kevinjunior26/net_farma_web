@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/src/components/atoms/button';
-import { ShoppingCart, Heart, User, Search, Menu, X, Phone } from 'lucide-react';
+import { ShoppingCart, Search, Menu, X, Phone } from 'lucide-react';
 import { FavoritesIcon } from '@/src/components/organisms/Favorites/Favorites';
 
 export function ModernHeader() {
@@ -40,10 +40,11 @@ export function ModernHeader() {
                 <div className="flex items-center justify-between h-16 lg:h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2">
-                        <div className="w-10 h-10 bg-health-gradient rounded-xl flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">K</span>
+                        <div className="w-20 h-20 rounded-xl flex items-center justify-center">
+                           {/* <span className="text-white font-bold text-lg">NF</span>*/}
+                            <img src="/logo.png" alt=""/>
                         </div>
-                        <span className="text-xl font-bold text-gray-900">KN95 Premium</span>
+                        <span className="text-xl font-semibold text-gray-900">NetFarma</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -83,11 +84,8 @@ export function ModernHeader() {
                         <div className="hidden lg:flex items-center space-x-4">
                             <div className="flex items-center space-x-2 text-sm text-gray-600">
                                 <Phone className="w-4 h-4" />
-                                <span>(11) 9999-9999</span>
+                                <span>(+238) 5978254</span>
                             </div>
-                            <Button className="bg-health-gradient hover:opacity-90 text-white px-6 py-2 rounded-lg">
-                                Comprar Agora
-                            </Button>
                         </div>
 
                         {/* Mobile menu button */}

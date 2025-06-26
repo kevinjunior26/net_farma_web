@@ -8,7 +8,7 @@ const stats = [
         icon: Users,
         number: "50.000+",
         label: "Clientes Satisfeitos",
-        description: "Famílias protegidas em todo o Brasil"
+        description: "Famílias protegidas em toda a nossa ilha"
     },
     {
         icon: Shield,
@@ -85,7 +85,7 @@ export function TrustSection() {
                         >
                             <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
                                 <div className="w-16 h-16 bg-health-gradient rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                                    <stat.icon className="w-8 h-8 text-white" />
+                                    <stat.icon className="w-8 h-8 text-blue-500" />
                                 </div>
                                 
                                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">

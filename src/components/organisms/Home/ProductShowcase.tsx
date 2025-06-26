@@ -6,40 +6,53 @@ import { Star, ShoppingCart, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 const products = [
-    {
-        id: 1,
-        name: "KN95 Premium Pack",
-        price: "R$ 89,90",
-        originalPrice: "R$ 119,90",
-        rating: 4.9,
-        reviews: 1247,
-        image: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-        badge: "Mais Vendido",
-        features: ["Pack com 20 unidades", "Certificação N95", "Entrega grátis"]
-    },
-    {
-        id: 2,
-        name: "KN95 Infantil Colorida",
-        price: "R$ 59,90",
-        originalPrice: "R$ 79,90",
-        rating: 4.8,
-        reviews: 892,
-        image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-        badge: "Novo",
-        features: ["Pack com 15 unidades", "Tamanho infantil", "Cores divertidas"]
-    },
-    {
-        id: 3,
-        name: "KN95 Profissional",
-        price: "R$ 149,90",
-        originalPrice: "R$ 199,90",
-        rating: 5.0,
-        reviews: 567,
-        image: "https://images.unsplash.com/photo-1603398938795-b7a4b0b8b6e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-        badge: "Premium",
-        features: ["Pack com 50 unidades", "Uso profissional", "Máxima proteção"]
-    }
-];
+        {
+            id: 1,
+            name: "Máscara de Proteção N95",
+            price: "399$00",
+            originalPrice: "450$00",
+            rating: 4.9,
+            reviews: 1780,
+            image: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+            badge: "Mais Vendido",
+            features: [
+                "Pacote com 20 unidades",
+                "Filtragem N95 certificada",
+                "Ajuste confortável ao rosto"
+            ]
+        },
+        {
+            id: 2,
+            name: "Paracetamol Infantil",
+            price: "120$00",
+            originalPrice: "150$00",
+            rating: 4.7,
+            reviews: 645,
+            image: "/PARACETAMOL-SOL.png",
+            badge: "Novo",
+            features: [
+                "Embalagem com 15 comprimidos",
+                "Fórmula suave para crianças",
+                "Sabores agradáveis para facilitar ingestão"
+            ]
+        },
+        {
+            id: 3,
+            name: "Termômetro Digital Clínico",
+            price: "149$00",
+            originalPrice: "199$00",
+            rating: 5.0,
+            reviews: 512,
+            image: "/termometro.webp",
+            badge: "Premium",
+            features: [
+                "Leitura rápida em 1 segundo",
+                "Alta precisão de medição",
+                "Indicado para uso profissional e doméstico"
+            ]
+        }
+    ]
+;
 
 export function ProductShowcase() {
     return (

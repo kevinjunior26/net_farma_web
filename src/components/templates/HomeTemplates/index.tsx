@@ -3,7 +3,7 @@ import { ModernHero } from "@/src/components/organisms/Home/ModernHero";
 import { FeaturesSection } from "@/src/components/organisms/Home/FeaturesSection";
 import { ProductShowcase } from "@/src/components/organisms/Home/ProductShowcase";
 import { TrustSection } from "@/src/components/organisms/Home/TrustSection";
-import { TestimonialsSection } from "@/src/components/organisms/Home/TestimonialsSection";
+import {TestemunhosSection} from "@/src/components/organisms/Home/TestimonialsSection";
 import { CTASection } from "@/src/components/organisms/Home/CTASection";
 import * as React from "react";
 
@@ -14,7 +14,7 @@ export function HomeTemplate(){
             <FeaturesSection />
             <ProductShowcase />
             <TrustSection />
-            <TestimonialsSection />
+            <TestemunhosSection />
             <CTASection />
         </div>
     )
