@@ -1,7 +1,7 @@
 'use client';
 
 import React  from 'react';
-import { motion } from 'framer-motion';
+import {cubicBezier, motion, Transition} from 'framer-motion';
 
 interface HeroRightShapeProps extends React.SVGProps<SVGSVGElement> {
     gradientStartColor?: string;
@@ -18,7 +18,11 @@ export const HeroRightShape: React.FC<HeroRightShapeProps> = ({
     ...props
 }) => {
 
-    const transition = { duration: 1.2, ease: [0.6, -0.05, 0.01, 0.99] };
+
+    const transition: Transition = {
+        duration: 1.2,
+        ease: cubicBezier(0.6, -0.05, 0.01, 0.99),
+    };
 
     return (
         <svg width="455" height="1508" viewBox="0 0 455 1508" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>

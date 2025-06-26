@@ -1,9 +1,18 @@
-'use client'
+'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Wind, Clock, Heart, CheckCircle, Users } from 'lucide-react';
 
-const features = [
+// Define as cores permitidas
+type Color = 'emerald' | 'blue' | 'purple' | 'pink' | 'green' | 'orange';
+
+// Tipagem do array de features
+const features: {
+    icon: React.ComponentType<{ className?: string }>;
+    title: string;
+    description: string;
+    color: Color;
+}[] = [
     {
         icon: Shield,
         title: "Proteção Máxima",
@@ -42,7 +51,8 @@ const features = [
     }
 ];
 
-const colorClasses = {
+// Define os estilos por cor com tipagem segura
+const colorClasses: Record<Color, string> = {
     emerald: "bg-emerald-100 text-emerald-600",
     blue: "bg-blue-100 text-blue-600",
     purple: "bg-purple-100 text-purple-600",
@@ -55,7 +65,7 @@ export function FeaturesSection() {
     return (
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -66,7 +76,7 @@ export function FeaturesSection() {
                         Por que escolher nossas <span className="text-transparent bg-clip-text bg-health-gradient">máscaras KN95</span>?
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Desenvolvidas com tecnologia avançada para oferecer a melhor proteção 
+                        Desenvolvidas com tecnologia avançada para oferecer a melhor proteção
                         sem comprometer o conforto e a praticidade do dia a dia.
                     </p>
                 </motion.div>
@@ -85,11 +95,11 @@ export function FeaturesSection() {
                                 <div className={`w-16 h-16 rounded-2xl ${colorClasses[feature.color]} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                                     <feature.icon className="w-8 h-8" />
                                 </div>
-                                
+
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                                     {feature.title}
                                 </h3>
-                                
+
                                 <p className="text-gray-600 leading-relaxed">
                                     {feature.description}
                                 </p>

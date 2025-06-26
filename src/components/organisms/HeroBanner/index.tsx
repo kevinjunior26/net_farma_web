@@ -6,7 +6,7 @@ import { Button } from '../../atoms/button';
 import { HeroRightShape } from './HeroRightShape';
 import {Icon} from "lucide-react";
 import {IBanner} from "@/src/types/InterfaceMenuData/type";
-
+import { easeInOut } from 'framer-motion';
 
 interface HeroCarouselProps {
     slidesData: IBanner[];
@@ -23,8 +23,10 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
         { start: '#61C3A8', startOp: 0.4, end: '#61C3A8', endOp: 1 },
     ];
     const grad = gradientConfigs[currentSlide % gradientConfigs.length];
-    const transition = { duration: 0.8, ease: 'easeInOut' };
-
+    const transition = {
+        duration: 0.8,
+        ease: easeInOut,
+    };
     useEffect(() => {
         const timeout = setTimeout(() => {
             setCurrentSlide((prev) => (prev + 1) % totalSlides);

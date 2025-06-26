@@ -5,7 +5,7 @@ import { Button } from '../../atoms/button';
 import {IBanner} from "@/src/types/InterfaceMenuData/type";
 import {HeroRightShape} from "@/src/components/organisms/HeroBanner/HeroRightShape";
 import Icon from "@/src/components/atoms/Icons";
-
+import { easeInOut } from 'framer-motion';
 interface HeroCarouselProps {
     slidesData: IBanner[];
 }
@@ -20,7 +20,11 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
         { start: '#61C3A8', startOp: 0.4, end: '#61C3A8', endOp: 1 },
     ];
     const grad = gradientConfigs[currentSlide % gradientConfigs.length];
-    const transition = { duration: 0.8, ease: 'easeInOut' };
+
+    const transition = {
+        duration: 0.8,
+        ease: easeInOut,
+    };
 
     useEffect(() => {
         const timeout = setTimeout(() => {
