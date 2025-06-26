@@ -14,15 +14,6 @@ const poppins = Poppins({
     variable: '--font-poppins'
 });
 
-// Metadata da página
-export const metadata: Metadata = {
-    title: "NetFarma",
-    description: "Farmácia online com soluções para todos",
-    icons: {
-        icon: '/logo.png',
-    },
-};
-
 export default function RootLayout({
     children,
    }: Readonly<{
