@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Button } from '../../atoms/button';
 import {IBanner} from "@/src/types/InterfaceMenuData/type";
 import {HeroRightShape} from "@/src/components/organisms/HeroBanner/HeroRightShape";
-import {Icon} from "lucide-react";
+import Icon from "@/src/components/atoms/Icons";
 
 interface HeroCarouselProps {
     slidesData: IBanner[];
@@ -110,7 +110,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({ slidesData }) => {
                                                     }
                                                     : {}
                                             }
-                                            iconRight={<Icon name="arrow-rigth-45" className="text-white" iconNode={[]} />}
+                                            iconRight={<Icon name="arrow-rigth-45" className="text-white" />}
                                         >
                                             {slidesData[currentSlide].button.label}
                                         </Button>
